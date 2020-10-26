@@ -10,6 +10,7 @@ import store from './store';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Main from './Main/Main';
 
 function App() {
 // const [disable, setDisable] = useState(true);
@@ -20,13 +21,12 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-          <NavbarView />
-          <Container>
-            <ItemModal />
-            <ShoppingList />
-          </Container>
-          {/* <ButtonOne disable={disable} />
-          <div onClick={onClickDisable}>kaka</div> */}
+        {/* <NavbarView />
+        <Container>
+          <ItemModal />
+          <ShoppingList />
+        </Container> */}
+        <Main />
       </div>
     </Provider>
   );
